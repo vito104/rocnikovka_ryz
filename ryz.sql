@@ -217,7 +217,7 @@ CREATE TABLE osoby_lode(
     CONSTRAINT fk_lodky FOREIGN KEY (id_lode) REFERENCES lode(id_lode),
     CONSTRAINT fk_osoby_lode FOREIGN KEY(id_osoby_role) REFERENCES osoba_role(id_osoby_role)
 );
-INSERT INTO osoby_lode(id_osoby, id_lode) VALUES
+INSERT INTO osoby_lode(id_osoby_lode, id_lode) VALUES
 ("1", "7"),
 ("6", "8"),
 ("12", "10"),
