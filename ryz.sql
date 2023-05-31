@@ -61,7 +61,7 @@ CREATE TABLE vyrobce_palivo(
     CONSTRAINT fK_palivo FOREIGN KEY (id_paliva) REFERENCES palivo(id_paliva),
     CONSTRAINT unikatnost_paliva UNIQUE (id_paliva, id_vyrobce, id_kvality)
 );
-INSERT INTO vyrobce_palivo(id_paliva, id_vyrobce, id_kvality, ekologické, cena_za_m3) VALUES
+INSERT INTO vyrobce_palivo(id_paliva, id_vyrobce, id_kvality, ekologicke, cena_za_m3) VALUES
 ("5", "1", "", TRUE, "1.00"),
 ("2", "2", "1", TRUE, "43.00"),
 ("11", "6", "", TRUE, "50.00"),
