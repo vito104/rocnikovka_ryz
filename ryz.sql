@@ -3,7 +3,7 @@ use ryz;
 
 CREATE TABLE vyrobce(
     id_vyrobce INT PRIMARY KEY AUTO_INCREMENT,
-    nazev_kvality VARCHAR(50) NOT NULL UNIQUE
+    nazev VARCHAR(50) NOT NULL UNIQUE
 );
 INSERT INTO vyrobce(nazev) VALUES
 ("Shell"),
@@ -19,7 +19,7 @@ INSERT INTO vyrobce(nazev) VALUES
 
 CREATE TABLE kvalita_paliva(
     id_kvality INT PRIMARY KEY AUTO_INCREMENT,
-    nazev VARCHAR(50) NOT NULL UNIQUE
+    nazev_kvality VARCHAR(50) NOT NULL UNIQUE
 );
 INSERT INTO kvalita_paliva(nazev_kvality) VALUES
 ("100"),
