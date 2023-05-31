@@ -62,16 +62,16 @@ CREATE TABLE vyrobce_palivo(
     CONSTRAINT unikatnost_paliva UNIQUE (id_paliva, id_vyrobce, id_kvality)
 );
 INSERT INTO vyrobce_palivo(id_paliva, id_vyrobce, id_kvality, ekologicke, cena_za_m3) VALUES
-("5", "1", "", TRUE, "1.00"),
+("5", "1", "1", TRUE, "1.00"),
 ("2", "2", "1", TRUE, "43.00"),
-("10", "6", "", TRUE, "50.00"),
+("10", "6", "1", TRUE, "50.00"),
 ("1", "9", "10", FALSE, "10.00"),
-("7", "6", "", TRUE, "1.00"),
+("7", "6", "1", TRUE, "1.00"),
 ("7", "8", "10", FALSE, "10.00"),
-("9", "3", "", FALSE, "50.00"),
-("3", "6", "", TRUE, "10.00"),
-("10", "9", "", TRUE, "12.00"),
-("3", "3", "", FALSE, "15.00");
+("9", "3", "1", FALSE, "50.00"),
+("3", "6", "1", TRUE, "10.00"),
+("10", "9", "1", TRUE, "12.00"),
+("3", "3", "1", FALSE, "15.00");
  
 CREATE TABLE lode(
     id_lode INT PRIMARY KEY AUTO_INCREMENT,
