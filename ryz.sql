@@ -75,7 +75,7 @@ INSERT INTO vyrobce_palivo(id_paliva, id_vyrobce, id_kvality, ekologicke, cena_z
  
 CREATE TABLE lode(
     id_lode INT PRIMARY KEY AUTO_INCREMENT,
-    nazev VARCHAR(50) NOT NULL UNIQUE,
+    nazev_lode VARCHAR(50) NOT NULL UNIQUE,
     kapacita_nadrze FLOAT NOT NULL,
     id_vyrobce_palivo INT NOT NULL,
     CONSTRAINT fk_paliva FOREIGN KEY(id_vyrobce_palivo) REFERENCES vyrobce_palivo(id_vyrobce_palivo)
