@@ -35,7 +35,7 @@ INSERT INTO kvalita_paliva(nazev_kvality) VALUES
 
 CREATE TABLE palivo(
     id_paliva INT PRIMARY KEY AUTO_INCREMENT,
-    nazev_paliva INT NOT NULL UNIQUE
+    nazev_paliva VARCHAR(50) NOT NULL UNIQUE
 );
 INSERT INTO palivo(nazev_paliva) VALUES
 ("Nafa"),
