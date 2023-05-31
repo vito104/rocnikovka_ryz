@@ -80,7 +80,7 @@ CREATE TABLE lode(
     id_vyrobce_palivo INT NOT NULL,
     CONSTRAINT fk_paliva FOREIGN KEY(id_vyrobce_palivo) REFERENCES vyrobce_palivo(id_vyrobce_palivo)
 );
-INSERT INTO lode(nazev_lode, kapacita_nadrze, ID_paliva) VALUES
+INSERT INTO lode(nazev_lode, kapacita_nadrze, id_vyrobce_palivo) VALUES
 ("Jarmila", "100", 4),
 ("Bohuna", "1500", 2),
 ("Samo", "200", 10),
