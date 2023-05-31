@@ -5,7 +5,7 @@ CREATE TABLE vyrobce(
     id_vyrobce INT PRIMARY KEY AUTO_INCREMENT,
     nazev VARCHAR(50) NOT NULL UNIQUE
 );
-INSERT INTO vyrobce(jmeno_vyrobce) VALUES
+INSERT INTO vyrobce(nazev) VALUES
 ("Shell"),
 ("Verva"),
 ("Agro Žamberk"),
