@@ -164,6 +164,6 @@ INSERT INTO vyrobce_palivo(id_paliva, id_vyrobce, id_kvality, ekologické, cena_
 ("7", "6", "", TRUE, "1.00"),
 ("7", "8", "11", FALSE, "10.00\"),
 ("10", "3", "", FALSE, "50.00"),
-("3", "6", "", TRUE, "10.00"),
+("3", "6", "", TRUE, "10.00");
 ("11", "9", "", TRUE, "12.00"),
 ("3", "3", "", FALSE, "15.00"),
