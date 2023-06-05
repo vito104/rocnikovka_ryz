@@ -116,7 +116,7 @@ CREATE TABLE pristav(
     id_mesto INT NOT NULL UNIQUE,
     CONSTRAINT fk_mesto FOREIGN KEY(id_mesto) REFERENCES mesto(id_mesto)
 );
- INSERT INTO pristav(nazev,id_mesta) VALUES
+ INSERT INTO pristav(nazev,id_mesto) VALUES
 ("Kozlov", "1"),
 ("Altona", "6"),
 ("Europort", "8"),
