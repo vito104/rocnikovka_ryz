@@ -137,7 +137,7 @@ CREATE TABLE dok(
 );
 INSERT INTO dok(nazev_doku, id_pristavu) VALUES 
 ("Dok Petra Tupce", 2),
-("Haubt", 3),
+("Haubtdock", 3),
 ("P1", 9),
 ("Marina", 8),
 ("Doka", 10),
