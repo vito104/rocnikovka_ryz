@@ -191,14 +191,6 @@ CREATE TABLE role(
     nazev VARCHAR(50) NOT NULL UNIQUE
 );
 
-CREATE TABLE osoba_role(
-    id_osoby_role INT PRIMARY KEY AUTO_INCREMENT,
-    id_role INT NOT NULL,
-    id_osoby INT NOT NULL,
-    CONSTRAINT fk_role FOREIGN KEY (id_role) REFERENCES role(id_role),
-    CONSTRAINT fk_osoby FOREIGN KEY (id_osoby) REFERENCES osoby(id_osoby),
-    CONSTRAINT unikatnost_osoby UNIQUE (id_role, id_osoby)
-);
  INSERT INTO role(nazev) VALUES
 ("Kapitán"),
 ("Topič"),
@@ -211,6 +203,28 @@ CREATE TABLE osoba_role(
 ("Cestující žena"),
 ("Bezpečnostní služba");
 
+CREATE TABLE osoba_role(
+    id_osoby_role INT PRIMARY KEY AUTO_INCREMENT,
+    id_role INT NOT NULL,
+    id_osoby INT NOT NULL,
+    CONSTRAINT fk_role FOREIGN KEY (id_role) REFERENCES role(id_role),
+    CONSTRAINT fk_osoby FOREIGN KEY (id_osoby) REFERENCES osoby(id_osoby),
+    CONSTRAINT unikatnost_osoby UNIQUE (id_role, id_osoby)
+);
+
+INSERT INTO osoby_role(id_osoby, id_role) VALUES
+("1", "1"),
+("1", "10"),
+("4", "5"),
+("10", "8"),
+("6", "3"),
+("9", "6"),
+("5", "9"),
+("7", "6"),
+("3", "2"),
+("2", "4");
+
+
 CREATE TABLE osoby_lode(
     id_osoby_lode INT PRIMARY KEY AUTO_INCREMENT,
     id_lode INT NOT NULL,
@@ -218,6 +232,7 @@ CREATE TABLE osoby_lode(
     CONSTRAINT fk_lodky FOREIGN KEY (id_lode) REFERENCES lode(id_lode),
     CONSTRAINT fk_osoby_lode FOREIGN KEY(id_osoby_role) REFERENCES osoba_role(id_osoby_role)
 );
+
 INSERT INTO osoby_lode(id_osoby_lode, id_lode) VALUES
 ("1", "7"),
 ("6", "8"),
