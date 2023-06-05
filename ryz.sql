@@ -230,7 +230,7 @@ CREATE TABLE osoby_lode(
     id_lode INT NOT NULL,
     id_osoby_role INT NOT NULL,
     CONSTRAINT fk_lodky FOREIGN KEY (id_lode) REFERENCES lode(id_lode),
-    CONSTRAINT fk_osoby_role FOREIGN KEY(id_osoby_role) REFERENCES osoba_role(id_osoby_role)
+	CONSTRAINT fk_osoby_role FOREIGN KEY (id_osoby_role) REFERENCES osoby_role(id_osoby_role)
 );
 
 INSERT INTO osoby_lode(id_osoby_lode, id_lode) VALUES
