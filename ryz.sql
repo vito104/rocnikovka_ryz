@@ -233,14 +233,14 @@ CREATE TABLE osoby_lode(
 	CONSTRAINT fk_osoby_role FOREIGN KEY (id_osoby_role) REFERENCES osoby_role(id_osoby_role)
 );
 
-INSERT INTO osoby_lode(id_osoby_lode, id_lode) VALUES
-("1", "7"),
-("6", "8"),
-("12", "10"),
-("9", "14"),
-("4", "8"),
-("2", "11"),
-("8", "11"),
-("8", "16"),
-("6", "15"),
-("11", "12");
+INSERT INTO osoby_lode(id_osoby_role, id_lode) VALUES
+(1, 2),
+(6, 3),
+(2, 1),
+(9, 8),
+(4, 3),
+(2, 5),
+(8, 5),
+(8, 10),
+(6, 9),
+(1, 6);
