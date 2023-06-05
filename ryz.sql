@@ -49,7 +49,6 @@ INSERT INTO palivo(nazev_paliva) VALUES
 ("Dřevěnné uhlí"),
 ("Plyn");
 
---DODĚLAT 
 
 CREATE TABLE vyrobce_palivo(
     id_vyrobce_palivo INT PRIMARY KEY AUTO_INCREMENT,
