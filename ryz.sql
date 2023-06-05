@@ -140,7 +140,7 @@ INSERT INTO dok(nazev_doku, id_pristavu) VALUES
 ("Haubtdock", 2),
 ("P1", 8),
 ("Marina", 7),
-("Doka", 9,
+("Doka", 9),
 ("First dock", 10),
 ("City dock", 3),
 ("Přístaviště", 4),
