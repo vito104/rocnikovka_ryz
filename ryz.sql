@@ -127,7 +127,7 @@ CREATE TABLE pristav(
 ("Bazaly", "5"),
 ("Thesaloniki port", "10"),
 ("Folkstone port", "7"),
-("Přístav Jaroslavlt", "11");
+("Přístav Jaroslavl", "11");
 
 CREATE TABLE dok(
     id_doku INT PRIMARY KEY AUTO_INCREMENT,
