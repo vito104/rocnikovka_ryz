@@ -203,7 +203,7 @@ CREATE TABLE role(
 ("Cestující žena"),
 ("Bezpečnostní služba");
 
-CREATE TABLE osoba_role(
+CREATE TABLE osoby_role(
     id_osoby_role INT PRIMARY KEY AUTO_INCREMENT,
     id_role INT NOT NULL,
     id_osoby INT NOT NULL,
