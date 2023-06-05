@@ -136,16 +136,16 @@ CREATE TABLE dok(
     CONSTRAINT fk_pristav FOREIGN KEY (id_pristavu) REFERENCES pristav(id_pristavu)
 );
 INSERT INTO dok(nazev_doku, id_pristavu) VALUES 
-("Dok Petra Tupce", 2),
-("Haubtdock", 3),
-("P1", 9),
-("Marina", 8),
-("Doka", 10),
-("First dock", 12),
-("City dock", 4),
-("Přístaviště", 5),
-("Dok Petra Sýkory", 6),
-("Petrovský dok", 7);
+("Dok Petra Tupce", 1),
+("Haubtdock", 2),
+("P1", 8),
+("Marina", 7),
+("Doka", 9,
+("First dock", 10),
+("City dock", 3),
+("Přístaviště", 4),
+("Dok Petra Sýkory", 5),
+("Petrovský dok", 6);
  
 CREATE TABLE lode_doky(
     id_lode_doky INT PRIMARY KEY AUTO_INCREMENT,
