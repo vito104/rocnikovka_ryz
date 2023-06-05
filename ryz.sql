@@ -55,7 +55,7 @@ CREATE TABLE vyrobce_palivo(
     id_vyrobce_palivo INT PRIMARY KEY AUTO_INCREMENT,
     id_vyrobce INT NOT NULL,
     id_kvality INT,
-    ekologicke BOOL NOT NULL,
+    ekologicke BOOLEAN NOT NULL,
     id_paliva INT NOT NULL,
     cena_za_m3 FLOAT NOT NULL,
     CONSTRAINT fK_vyrobce FOREIGN KEY (id_vyrobce) REFERENCES vyrobce(id_vyrobce),
